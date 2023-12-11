@@ -50,3 +50,6 @@ TagManager:
   - name: Foreground
     uniqueID: 2579315895
     locked: 0
+  - name: UI_Sprites
+    uniqueID: 3556031177
+    locked: 0
