@@ -10,6 +10,8 @@ public class GameControl : MonoBehaviour
     public static GameControl Instance;
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float groundScrollSpeed = 1.5f;
+    public float skyScrollSpeed = 0.5f;
 
     void Awake()
     {
