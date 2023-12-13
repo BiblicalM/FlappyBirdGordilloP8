@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -24,7 +25,10 @@ public class GameControl : MonoBehaviour
 
     void Update()
     {
-
+        if (gameOver && Input.GetKeyDown(KeyCode.Space) || gameOver && Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void BirdDied()
