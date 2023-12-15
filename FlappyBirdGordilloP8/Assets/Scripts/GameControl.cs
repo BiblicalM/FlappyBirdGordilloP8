@@ -15,6 +15,8 @@ public class GameControl : MonoBehaviour
     public float groundScrollSpeed = 1.5f;
     public float skyScrollSpeed = 0.5f;
 
+    private AudioSource audioSource;
+
     private int score = 0;
 
     void Awake()
@@ -27,6 +29,7 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -45,6 +48,7 @@ public class GameControl : MonoBehaviour
         }
         score++;
         scoreText.text = "Score: " + score.ToString();
+        audioSource.Play();
     }
 
     public void BirdDied()
