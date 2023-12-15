@@ -20,17 +20,17 @@ public class RepeatingBackground : MonoBehaviour
     {
         if (sky)
         {
-            if (transform.position.x > 11.99)
+            if (transform.position.x > 16.99)
             {
-                Vector2 pos = new Vector2(-15, 1);
+                Vector2 pos = new Vector2(-19, 1);
                 transform.position = pos;
             }
         }
         else
         {
-            if (transform.position.x > 12.49)
+            if (transform.position.x > 17.49)
             {
-                Vector2 pos = new Vector2(-19, -5);
+                Vector2 pos = new Vector2(-24, -5);
                 transform.position = pos;
             }
         }
