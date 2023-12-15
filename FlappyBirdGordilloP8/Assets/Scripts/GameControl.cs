@@ -12,7 +12,7 @@ public class GameControl : MonoBehaviour
     public GameObject gameOverText;
     public TextMeshProUGUI scoreText;
     public bool gameOver = false;
-    public float groundScrollSpeed = 2.0f;
+    public float groundScrollSpeed = 1.5f;
     public float skyScrollSpeed = 0.5f;
 
     private int score = 0;
